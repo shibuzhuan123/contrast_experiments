@@ -71,3 +71,14 @@ dota_kit/polyiou.py
 dota_kit/polyiou_wrap.cpp
 dota_kit/*.so
 dota_kit/*.pyd
+
+# AerialDetection (clone from github)
+AerialDetection/
+
+# Training outputs
+runs/
+*.pt
+!yolov8*-obb.pt
+
+# Claude
+.claude/
