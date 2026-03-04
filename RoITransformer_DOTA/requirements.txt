@@ -1,0 +1,6 @@
+Cython
+EasyDict
+opencv-python
+shapely
+pyyaml
+Pillow
