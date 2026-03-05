@@ -208,3 +208,23 @@ python eval_angle_error.py --model runs/obb/best.pt --data dataset.yaml
 |------|----------|
 | 2026-03-04 | 创建对比实验文件夹，添加 RoI Transformer |
 | 2026-03-04 | 添加评估指标说明，创建角度误差测试脚本 |
+| 2026-03-05 | 添加 YOLO11-OBB 训练脚本 (Baseline) |
+| 2026-03-05 | 添加 RoI Transformer (AerialDetection) 支持 |
+| 2026-03-05 | 添加 YOLO-OBB 转 DOTA 格式转换脚本 |
+
+---
+
+## 十一、文件说明
+
+```
+contrast_experiments/
+├── README.md                           # 项目说明
+├── train_yolo11_obb.py                 # YOLO11-OBB 训练脚本 (Baseline)
+├── train_roitransformer.py             # RoI Transformer 训练脚本
+├── convert_yolo_to_dota.py             # 数据格式转换脚本
+├── eval_angle_error.py                 # 角度误差评估脚本
+├── configs/
+│   └── roitransformer_sar.py           # RoI Transformer SAR配置
+├── AerialDetection/                    # AerialDetection 框架 (需单独克隆)
+└── RoITransformer_DOTA/                # 原版 MXNet (参考)
+```
